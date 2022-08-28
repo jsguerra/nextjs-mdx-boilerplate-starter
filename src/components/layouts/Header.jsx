@@ -7,6 +7,11 @@ export default function Header() {
         <Link href={'/'}>
           <a>MDXBlog</a>
         </Link>
+        <nav>
+          <Link href={'/blog'}>
+            <a>Blog</a>
+          </Link>
+        </nav>
       </div>
     </header>
   );
