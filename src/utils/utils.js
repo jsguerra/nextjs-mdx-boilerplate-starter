@@ -15,6 +15,7 @@ export const getPosts = (pageIndex) => {
         path.join(process.cwd(), 'src/pages', 'posts', file.name),
         'utf-8',
       );
+
       const { data, content } = matter(fileContent);
       const slug = file.name.replace(/.mdx$/, '');
 

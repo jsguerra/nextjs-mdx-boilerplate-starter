@@ -18,7 +18,7 @@ export default function Blog({ posts }) {
 
   return (
     <>
-      <div className={styles.articleList}>
+      <div className="container">
         <p className={styles.desc}>Newly Published</p>
         {filteredPosts.map((post, index) => (
           <Link key={index} href={`/posts/${post.slug}`}>

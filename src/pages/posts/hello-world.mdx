@@ -1,12 +1,22 @@
 ---
 title: Hello World!
+description: Lorem ipsum
 publishedOn: 28 August 2022
+updatedOn:
 excerpt: Hello world, lorem ipsum...
 ---
 
 import Article from '../../components/Article';
 
-export default ({ children }) => <Article title="Hello World">{children}</Article>
+export const meta = {
+  title: 'Hello World!',
+  description: 'Lorem ipsum',
+  publishedOn: '28 August 2022',
+  updatedOn: '',
+  excerpt: 'Hello world, lorem ipsum...',
+}
+
+export default ({ children }) => <Article title={meta.title}>{children}</Article>
 
 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, facere hic? Repudiandae adipisci dolor, doloremque iste quia eveniet deserunt magni porro delectus, eos soluta similique, veritatis sint fugit atque! Sapiente.
 
