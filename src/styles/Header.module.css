@@ -1,0 +1,13 @@
+.siteHeader {
+  background-color: teal;
+  color: white;
+  padding: 0 1rem;
+}
+
+.maxWidthContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 960px;
+  padding: 1rem 0;
+}
